@@ -1,0 +1,9 @@
+*.o
+*.gch
+.idea
+.vscode
+.DS_Store
+
+# ex00 ex01 ex02
+fixed
+my.txt
