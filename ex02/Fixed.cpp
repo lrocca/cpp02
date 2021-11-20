@@ -6,7 +6,7 @@
 /*   By: lrocca <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:32:40 by lrocca            #+#    #+#             */
-/*   Updated: 2021/11/20 18:41:17 by lrocca           ###   ########.fr       */
+/*   Updated: 2021/11/20 19:28:37 by lrocca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,27 +67,27 @@ int	Fixed::toInt(void) const {
 }
 
 bool	Fixed::operator>(Fixed const &other) const {
-	return toFloat() > other.toFloat();
+	return getRawBits() > other.getRawBits();
 }
 
 bool	Fixed::operator<(Fixed const &other) const {
-	return toFloat() < other.toFloat();
+	return getRawBits() < other.getRawBits();
 }
 
 bool	Fixed::operator>=(Fixed const &other) const {
-	return toFloat() >= other.toFloat();
+	return getRawBits() >= other.getRawBits();
 }
 
 bool	Fixed::operator<=(Fixed const &other) const {
-	return toFloat() <= other.toFloat();
+	return getRawBits() <= other.getRawBits();
 }
 
 bool	Fixed::operator==(Fixed const &other) const {
-	return toFloat() == other.toFloat();
+	return getRawBits() == other.getRawBits();
 }
 
 bool	Fixed::operator!=(Fixed const &other) const {
-	return toFloat() != other.toFloat();
+	return getRawBits() != other.getRawBits();
 }
 
 Fixed	Fixed::operator+(Fixed const &other) const {
